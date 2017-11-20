@@ -21,20 +21,20 @@ style.use('fivethirtyeight')
 ##plt.show()
 
 
-##def mod(num1,num2):
-##    yes = []
-##    for i in range(num1, num2):
-##        if i % 5 == 0:
-##            #print(str(i) + ' yes 5')
-##            yes.append(i)
-##        elif i % 3 == 0:
-##            #print(str(i) +  ' yes 3')
-##            yes.append(i)
-##        else:
-##            pass
-##    print(yes)
-##        
-##mod(2,123)
+def mod(num1,num2):
+    yes = []
+    for i in range(num1, num2):
+        if i % 5 == 0:
+            #print(str(i) + ' yes 5')
+            yes.append(i)
+        elif i % 3 == 0:
+            #print(str(i) +  ' yes 3')
+            yes.append(i)
+        else:
+            pass
+    print(yes)
+        
+mod(360, 500)
 
 
 
@@ -130,13 +130,19 @@ print('THIS' + str(names[0:3:2]))
 
 
 ###**************     ZIP     ***************************
-##x = [1,3,5,7]
-##y = [2,6,3,7]
-##z = ['a','d','z','f']
-##
-##for a,b in zip(x,z):
-##    print(a,b)
-##
+x = [1,3,5,7]
+y = [2,6,3,7]
+z = ['a','d','z','f']
+
+for a,b in zip(x,z):
+    print(a,b)
+
+############ dictionary zip #################
+test = dict(zip(('Paul', 'Anne', 'Joe'),('A','G','F')))
+
+print(test)
+
+
 ##    
 ##[print((x, y)) for x in [1,2,3] for y in [3,1,4] if x != y]
 ##
@@ -154,13 +160,13 @@ print('THIS' + str(names[0:3:2]))
 ##
 ##
 ##
-##sup = 'hey there guy I wonder what this interview is going to consist of.'
-##
-##
-##if 'asdf' in sup:
-##    print('in stringg')
-##else:
-##    print('not in string')
+sup = 'hey there guy I wonder what this interview is going to consist of.'
+
+
+if 'asdf' in sup:
+    print('in stringg')
+else:
+    print('not in string')
 
 
 
